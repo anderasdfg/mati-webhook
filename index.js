@@ -31,7 +31,7 @@ app.post('/webhook', (req, res) => {
             },
             json: true,
         }
-
+        console.log(options.body)
         rp(options)
             .then(function(response) {
                 responseJSON = JSON.stringify(response)
