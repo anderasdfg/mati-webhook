@@ -1,3 +1,4 @@
+const config = require('./config.js')
 const rp = require('request-promise')
 const bodyParser = require('body-parser')
 const express = require('express')
