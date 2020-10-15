@@ -23,7 +23,7 @@ app.post('/webhook', (req, res) => {
     if (eventName == 'verification_completed') {
         var options = {
             method: 'POST',
-            uri: 'http://200.121.128.122:8010/LOLIMSASERx/rest/webhook',
+            uri: 'http://200.121.128.122:8010/LOLIMSASER/rest/webhook',
             headers: {
                 'Content-Type': 'application/json',
             },
