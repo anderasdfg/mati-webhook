@@ -32,7 +32,7 @@ app.post('/webhook', (req, res) => {
             },
             json: true,
         }
-        console.log(options.body)
+        console.log("options.body " + options.body)
         rp(options)
             .then(function(response) {
                 responseJSON = JSON.stringify(response)
@@ -43,8 +43,7 @@ app.post('/webhook', (req, res) => {
                 responseJSON = JSON.stringify(err)
             })
     }
-    console.log("HEY: " + responseJSON)
-    res.send(options.body)
+    res.send(responseJSON)
 })
 
 
